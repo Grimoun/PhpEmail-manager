@@ -1,0 +1,12 @@
+hideManual: true
+watch:
+  directories:
+    - UnitTests
+  fileMask: '*.php'
+notifications:
+  passingTests: true
+  failingTests: true
+phpunit:
+  binaryPath: vendor/bin/phpunit
+  arguments: '--stop-on-failure'
+  timeout: 180
